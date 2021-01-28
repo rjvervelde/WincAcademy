@@ -1,0 +1,236 @@
+h{
+    font-size:16px;
+    margin:5px;
+    color:black;
+    max-width:80%;
+    align-self:center;
+}
+
+h2{
+    align-self:center;
+    color:darkred;
+    font-size:20px;
+}
+
+h3{
+    font-size:16px;
+    color:black;
+    margin:5px;
+}
+
+.container > div {
+    display: flex;
+    font-size: 1.5em;
+    color: black;
+}
+
+.container {
+    display: grid;
+    height: 100%;
+    grid-gap: 3px;
+    grid-template-columns: repeat(12, 1fr); /* 12 column layout, more flexibility*/
+    grid-template-rows: 50px 150px auto 5px 85px;
+    grid-template-areas: 
+    "h h h h h h h h h h h h"
+    "t t t t t t t t t t t t"
+    "m m m m m m m m m m m m"
+    "w w w w w w w w w w w w"
+    "f f f f f f f f f f f f";
+}
+
+.menu-button {
+    color:darkred;
+}
+
+.menu-button:hover{
+    color:lightcoral;
+}
+
+.header {
+    justify-content: space-around;
+    align-content:center;
+    grid-area: h;
+}
+
+
+.titel {
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area:t;
+    max-height:100%
+}
+
+.titel > img{
+    width: 50%;
+    max-width: 300px;
+    margin:5px;
+ }
+
+.button {
+    background-color: darkred;
+    color: white;
+    padding: 5px;
+    margin: 5px 5px;
+    text-align:center;
+    font-size: 16px;
+    align-self:flex-start;
+    border-radius:5px;
+  }
+
+.button:hover{
+    background-color:lightcoral;
+}
+
+
+  
+.site-main {
+    width:100%;
+    flex-direction: column;
+    align-content:center;
+    align-self:start;
+    grid-area: m;
+}
+
+img{
+    align-self: center;
+}
+
+.main_element{
+    display:flex;
+    width: 100%;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap:wrap;
+}
+
+.main_element > img {
+    padding: 10px;
+    width: 300px;
+    height: auto;
+}
+
+.story{
+    width: 150px;
+    height: 150px;
+    line-height: 150px;
+    margin:5px;
+    border-radius: 50%;
+    font-size: 30px;
+    color: #fff;
+    text-align: center;
+    background: lightcoral;
+}
+
+a{
+    text-decoration:none;
+}
+
+.story:hover{
+    background: pink;
+}
+
+.content-button{
+    width: 1fr;
+    height: 100%;
+}
+
+input[type=text] {
+    flex:none;
+    width: 100%;
+    max-width:500px;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+
+.media-area {
+    grid-area: w;
+    background-color: darkred;
+}
+
+.fa {
+    padding: 10px;
+    font-size: 15px;
+    width: 25px;
+    margin:20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 50%;
+  }
+
+/* Add a hover effect if you want */
+.fa:hover {
+    opacity: 0.7;
+  }
+
+/* Set a specific color for each brand */
+
+.fa-facebook {
+    background: #3B5998;
+    color: white;
+}
+
+.fa-twitter {
+    background: #55ACEE;
+    color: white;
+}
+
+.fa-instagram {
+    background: orange;
+    color: white;
+}
+
+.fa-pinterest {
+    background: darkred;
+    color: white;
+}
+  
+  
+.footer {
+    display:flex;
+    justify-content: space-around;
+    grid-area: f;
+    background-color: lightgrey;
+}
+  
+
+/* MEDIA QUERIES */
+
+@media only screen and (min-width: 600px) {
+    .container{
+        grid-template-rows: 150px auto 5px 85px;
+        grid-template-areas:
+        "h h t t t t t t t t t t" 
+        "m m m m m m m m m m m m "
+        "w w w w w w w w w w w w"
+        "f f f f f f f f f f f f";
+    }
+    .header{
+        flex-direction: column;
+        justify-content: flex-start;
+    }
+
+        
+    .titel {
+        width: 100%;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        grid-area:t;
+        max-height:100%
+    }
+}
+
+
+/* Phones }*/
+@media only screen and (min-width: 1100px) {
+    .container{
+        grid-template-rows: 150px auto 85px;
+        grid-template-areas: 
+        "h t t t t t t t t t t t"
+        "w m m m m m m m m m m m"
+        "f f f f f f f f f f f f";
+    }
+}
