@@ -2,6 +2,7 @@
 
 Hierbij de website van eindopdracht 1, met als het goed is de volgende eigenschappen:
 
+
 Gebruik een duidelijk onderwerp voor jouw website: "mijn website gaat over... " (0,5 punt)
 
 Gebruik meerdere pagina's in jouw website. (0,5 punt)
@@ -33,14 +34,23 @@ We kijken ook naar de netheid: zorg dus dat alle "spelfoutjes" uit je code zijn 
 Zorg daarnaast dat je code juiste geformatteerd is. Gebruik spaties en enters op de juiste manier . (0,5 punt)
 
 
+
 Bonus voor extra punten
+
+
   Gebruik veel mooie afbeeldingen, bijvoorbeeld van stockfoto websites. 
   
   Gebruik ook een design en gebruik media-queries voor andere screen-sizes, denk aan: tablet. 
   
   Gebruik mooie op elkaar afgestemde kleuren.
   
+  
+  
  Hier ben ik niet aan toegekomen:
+ 
   Gebruik een embedded YouTube video.
+  
   Gebruik externe libraries zoals Google Fonts, om extra CSS aan je website toe te voegen.
+  
   Gebruik een uitgebreid formulier met veel verschillende soorten inputvelden.
+  
